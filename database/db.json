@@ -1,0 +1,64 @@
+{
+  "technologies": [
+    {
+      "id": 1,
+      "type": "programmingLanguage",
+      "name": "javaScript",
+      "description": "Язык программирования для создания веб-приложений.",
+      "category": "Scripting",
+      "year": 1995,
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
+      "popularity": "Высокая"
+    },
+    {
+      "id": 2,
+      "type": "programmingLanguage",
+      "name": "python",
+      "description": "Универсальный язык программирования с простым синтаксисом.",
+      "category": "General-purpose",
+      "year": 1991,
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png",
+      "popularity": "Очень Высокая"
+    },
+    {
+      "id": 3,
+      "type": "programmingLanguage",
+      "name": "java",
+      "description": "Объектно-ориентированный язык программирования для создания кросс-платформенных приложений.",
+      "category": "General-purpose",
+      "year": 1995,
+      "img": "https://brandslogos.com/wp-content/uploads/thumbs/java-logo-vector-1.svg",
+      "popularity": "Высокая"
+    },
+    {
+      "id": 101,
+      "type": "webFramework",
+      "name": "react.js",
+      "description": "JavaScript-библиотека для создания пользовательских интерфейсов.",
+      "language": "JavaScript",
+      "year": 2013,
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/React_Logo_SVG.svg/1200px-React_Logo_SVG.svg.png",
+      "popularity": "Очень Высокая"
+    },
+    {
+      "id": 102,
+      "type": "webFramework",
+      "name": "django",
+      "description": "Фреймворк для создания веб-приложений на языке Python.",
+      "language": "Python",
+      "year": 2005,
+      "img": "https://download.logo.wine/logo/Django_(web_framework)/Django_(web_framework)-Logo.wine.png",
+      "popularity": "Высокая"
+    },
+    {
+      "id": 103,
+      "type": "webFramework",
+      "name": "angular",
+      "description": "Фреймворк для создания динамичных веб-приложений на языке TypeScript.",
+      "language": "TypeScript",
+      "year": 2010,
+      "img": "https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_640.png",
+      "popularity": "Высокая"
+    }
+  ]
+}

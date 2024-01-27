@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/images/itbackground.jpg);
+    background-size: cover;
+    min-height: 80vh;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0, 30, 99);
+    padding: 1% 3%;
+    z-index: 1001;
+}
+
+.header_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_container .header_title {
+    font-family: poppins;
+    font-weight: 700;
+    font-size: 23px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.header_container .navbar ul li {
+    display: inline-block;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #fff;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.nav_list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.burger_icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 2px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+.navbar {
+    transition: all 0.5s;
+}
+
+@media only screen and (max-width: 570px) {
+    .navbar {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 3%;
+    }
+
+    .navbar {
+        position: absolute;
+        /* Абсолютное позиционирование */
+        top: 100%;
+        /* Размещаем под заголовком */
+        left: 0;
+        /* Выравниваем по левому краю */
+        width: 100%;
+        background-color: #000a4e;
+        border-bottom: 2px solid white;
+        z-index: 1;
+        /* Устанавливаем z-index, чтобы меню было поверх остальных элементов */
+    }
+
+    .burger_icon {
+        display: flex;
+    }
+}
+
+/* main/////// */
+.about_main {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    margin-top: 140px;
+    min-height: 100%;
+    padding: 3%;
+}
+
+.about_title {
+    font-family: poppins;
+    font-weight: 600;
+    font-size: 23px;
+    color: #000;
+    cursor: pointer;
+}
+
+.about_subtitle {
+    font-family: open sans;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+
+.wrapper .i:hover{
+    cursor: pointer;
+    background-color: rgb(225, 110, 2);
+}
+.wrapper .i{
+    position: absolute;
+    background: rgb(0, 30, 99);
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    font-family: montserrat;
+    font-size: 1.1rem;
+    line-height: 45px;
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
+    top: 50%;
+    transition: all 500ms;
+    transform: translateY(-50%);
+}
+.wrapper .i:first-child{
+    left: 0;
+    display: none;
+}
+.wrapper .i:last-child{
+    right: 0px;
+}
+.wrapper .carousel{
+    white-space : nowrap;
+    cursor: pointer;
+    overflow: hidden;
+    font-size: 0px;
+    scroll-behavior: smooth;
+}
+.wrapper{
+    position: relative;
+    max-width: 1200px;
+}
+.carousel.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+}
+.carousel.dragging img{
+    pointer-events:none ;
+}
+.carousel img{
+    height: 340px;
+    width: 340px;
+    /* object-fit: cover; */
+    width: calc(100% / 3);
+    margin-left: 14px;
+}
+.carousel img:first-child{
+    margin-left: 0px;
+}
+.pre_subtitle{
+    font-family: open sans;
+    font-weight: 400;
+    margin-top: 2%;
+}
+.zapis{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 2% 0;
+}
+.zapis p{
+    font-size: 20px;
+    font-family: montserrat;
+}
+.zapis button{
+    height: 40px;
+    width: 120px;
+    background-color: rgb(225, 110, 2);
+    font-family: montserrat;
+    color: #fff;
+    border: none;
+    font-weight: 600;
+    transition: all 500ms;
+}
+.zapis button:hover{
+    cursor: pointer;
+    background-color: rgb(170, 82, 0);
+}
+@media screen and (max-width:900px) {
+    .carousel img{
+        width: calc(100% / 2);
+    }
+}
+@media screen and (max-width:550px) {
+    .carousel img{
+        width:100%;
+    }
+}
+@media (max-width:700px) {
+    .zapis{
+        justify-content: space-between;
+    }
+}
+
+/* modal contacts///////// */
+.modal_contacts.modalOpen {
+    display: block;
+}
+.modal_contacts {
+    padding: 2%;
+    background-color: #002058;
+    max-width: 700px;
+    min-height: 500px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 1000;
+}
+
+.modal_contacts_title {
+    font-family: montserrat;
+    color: #fff;
+}
+
+
+.modal_contacts_container {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal_contacts_container p {
+    font-family: open sans;
+    font-weight: 600;
+    color: #ddd;
+    margin: 15px 0;
+}
+
+.modal_contacts_container h3 {
+    font-family: montserrat;
+    font-weight: 500;
+    color: #ddd;
+}
+
+.social {
+    display: flex;
+    align-self: flex-end;
+    margin-top: 20%;
+    align-items: flex-end;
+}
+.social{
+    gap: 10px;
+}
+
+.social a:hover{
+    color: #a4a3a3;
+}
+.social h2 {
+    font-family: open sans;
+    font-weight: 500;
+    color: #fff;
+    font-size: 20px;
+}
+.social a {
+    font-family: poppins;
+    color: #ddd;
+    transition: all 500ms;
+}
+
+.info {
+    text-align: center;
+    margin-top: 20%;
+    font-family: montserrat;
+    font-weight: 500;
+    color: #fff;
+
+}
+.blurModal2::before{
+    content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color:rgba(0, 0, 0, .5);
+    z-index: 999;
+}
+.contactsClose:hover{
+    background-color: #263875;
+}
+.contactsClose{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #10297b;
+    scale: 1.10;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.5s;
+    padding: 1% 2%;
+}
+
+@media (max-width:800px) {
+    .modal_contacts {
+        width: 80%;
+    }
+}

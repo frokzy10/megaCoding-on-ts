@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./feedback.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header_container">
+            <a href="/index.html">
+                <p class="header_title">MegaCoding</p>
+            </a>
+            <nav class="navbar">
+                <ul class="nav_list">
+                    <a href="/pages/aboutus-page/aboutus.html">
+                        <li>Кто мы</li>
+                    </a>
+                    <a href="/pages/course-page/course.html">
+                        <li>Найти курс</li>
+                    </a>
+                </ul>
+            </nav>
+            <div class="burger_icon" id="burgerIcon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="feedback">
+        <div class="feedback_container">
+            <h2 class="feedback_title">Хотите оставить отзыв?</h2>
+            <input class="feedback_input" type="text" placeholder="Введите имя">
+            <textarea placeholder="Введите отзыв" class="feedback_texarea" name="" id="" cols="30" rows="10"></textarea>
+            <button  class="feedback_button">Отправить</button>
+        </div>
+    </section>
+    <section class="otzyv">
+        <h2 class="otzyv_title">Ваши отзывы</h2>
+        <div class="otzyv_container">
+        </div>
+    </section>
+    <section class="feedback_modal">
+        <div class="feedback_modal_container">
+            <h2 class="modal_title">Вы оставили отзыв!</h2>
+            <p class="modal_subtitle">Чтобы посмотреть его проскролльте вниз</p>
+        </div>
+    </section>
+    <script src="./feedback.js"></script>
+</body>
+
+</html>

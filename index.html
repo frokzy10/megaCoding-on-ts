@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/swiper@10.2.0/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>MegaCoding</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header_container">
+            <a href="/index.html">
+                <p class="header_title">MegaCoding</p>
+            </a>
+            <nav class="navbar">
+                <ul class="nav_list">
+                    <a href="/pages/aboutus-page/aboutus.html">
+                        <li>Кто мы</li>
+                    </a>
+                    <li class="contacts_link">Связваться с нами</li>
+                    <a href="./pages/course-page/course.html">
+                        <li>Найти курс</li>
+                    </a>
+                </ul>
+            </nav>
+            <div class="burger_icon" id="burgerIcon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero_container">
+            <div class="hero_con_2">
+                <h2 class="hero_title">MegaCoding - это компания будущих лидеров</h2>
+                <p>Получите специальность</p>
+                <a href="./pages/course-page/course.html">
+                    <button class="hero_button">Выбрать курс</button>
+                </a>
+            </div>
+            <div class="hero_consultation">
+                <form action="">
+                    <h2 class="consultation_title">Подберем обучение</h2>
+                    <input class="consultationFirstInput" type="text" placeholder="Введите имя">
+                    <input class="consultationSecondInput" type="number" placeholder="Введите номер">
+                    <button onclick="validateForm(event)" class="consultation_button">Хочу план обучения</button>
+                    <p>Отправляя заявку, вы даете согласие на обработку персональных данных.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="feedback_hero">
+        <div class="feedback_hero_con">
+            <h2 class="feedback_title">Хотите оставить отзыв?</h2>
+            <a href="./pages/feedback-page/feedback.html">
+                <button class="feedback_btn">Перейти</button>
+            </a>
+        </div>
+    </section>
+
+    <section class="modalConsultation">
+        <div class="modalConsultation_container">
+            <h2>Мы приняли вашу заявку!</h2>
+            <div class="zvonok">
+                <p>Ожидайте звонка</p>
+                <img src="./images/phone-call-svgrepo-com.svg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="modal_contacts">
+        <div class="modal_contacts_container">
+            <h2 class="modal_contacts_title">Хотите обсудить все с менеждером?</h2>
+            <p>Контакты:</p>
+            <h3>+996555300711</h3>
+            <h3>+996555555555</h3>
+            <div class="social">
+                <h2>Мой инсаграм:</h2>
+                <a target="_blank" href="https://www.instagram.com/nurdin.vivn/">nurdin.vivn</a>
+            </div>
+        </div>
+        <h2 class="info">Сайт сделан: Бакытбеков Нурдин</h2>
+        <div class="contactsClose">X</div>
+    </section>
+    <script src="./ts/main.js"></script>
+</body>
+
+</html>
